@@ -33,6 +33,11 @@ public class SieveTest {
 		assertEquals(list(2, 3, 5, 7), Sieve.generatePrimes(10));
 	}
 	
+	@Test
+	public void testTwenty() {
+		assertEquals(list(2, 3, 5, 7, 11, 13, 17, 19), Sieve.generatePrimes(20));
+	}
+	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints){
