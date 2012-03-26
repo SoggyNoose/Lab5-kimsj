@@ -7,7 +7,7 @@ public class PrimeFactorization {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		
 		if (n > 1) {
-			ret.add(2);
+			ret.add(n);
 		}
 		
 		return ret;
