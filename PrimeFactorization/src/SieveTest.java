@@ -18,6 +18,11 @@ public class SieveTest {
 		assertEquals(list(), Sieve.generatePrimes(2));
 	}
 	
+	@Test
+	public void testThree() {
+		assertEquals(list(2), Sieve.generatePrimes(3));
+	}
+	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints){
